@@ -15,5 +15,6 @@ This example is with Pushbullet but you can use alternative notification service
 4. [Create a token](https://www.pushbullet.com/#settings) in Pushbullet
 5. Paste your token inside `pb_ipcheck.sh` via replacing `pbapi="ur_token_here"`
    * Additionally, you can change the location of the ip.txt (default is script location).
+6. Make the script executable: `sudo chmod +x pb_ipcheck.sh`
 7. Create a scheduled task as root via `sudo crontab -e` with `0 */6 * * * ./home/usrname/pb_ipcheck.sh`
    * This example will run a check every 6 hours
